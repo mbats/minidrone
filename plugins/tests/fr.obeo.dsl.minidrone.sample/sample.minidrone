@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<minidrone:MiniDroneProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:minidrone="http://www.obeo.fr/dsl/minidrone/1.0.0" name="JSPilotingMinimal">
+  <instructions xsi:type="minidrone:Go" distance="50"/>
+  <instructions xsi:type="minidrone:Turn" angle="90"/>
+  <instructions xsi:type="minidrone:Jump"/>
+</minidrone:MiniDroneProgram>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2016 Obeo.&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA;&#xA;Contributors:&#xA;&#x9;Obeo - initial API and implementation&#xA;"
+    modelDirectory="/fr.obeo.dsl.minidrone/src-gen" editDirectory="/fr.obeo.dsl.minidrone.edit/src-gen"
+    editorDirectory="/fr.obeo.dsl.minidrone.editor/src-gen" modelPluginID="fr.obeo.dsl.minidrone"
+    modelName="MiniDrone" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    testsDirectory="/fr.obeo.dsl.minidrone.tests/src-gen" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>minidrone.ecore</foreignModel>
+  <genPackages prefix="MiniDrone" basePackage="fr.obeo.dsl" disposableProviderFactory="true"
+      ecorePackage="minidrone.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="minidrone.ecore#//JumpType">
+      <genEnumLiterals ecoreEnumLiteral="minidrone.ecore#//JumpType/JUMP_LONG"/>
+      <genEnumLiterals ecoreEnumLiteral="minidrone.ecore#//JumpType/JUMP_HIGH"/>
+      <genEnumLiterals ecoreEnumLiteral="minidrone.ecore#//JumpType/JUMP_MAX"/>
+    </genEnums>
+    <genClasses ecoreClass="minidrone.ecore#//MiniDroneProgram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference minidrone.ecore#//MiniDroneProgram/instructions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute minidrone.ecore#//MiniDroneProgram/name"/>
+    </genClasses>
+    <genClasses ecoreClass="minidrone.ecore#//Instruction"/>
+    <genClasses ecoreClass="minidrone.ecore#//Go">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute minidrone.ecore#//Go/distance"/>
+    </genClasses>
+    <genClasses ecoreClass="minidrone.ecore#//Turn">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute minidrone.ecore#//Turn/angle"/>
+    </genClasses>
+    <genClasses ecoreClass="minidrone.ecore#//Jump">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute minidrone.ecore#//Jump/jumpType"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
