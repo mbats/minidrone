@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: fr.obeo.dsl.minidrone.design
+Bundle-SymbolicName: fr.obeo.dsl.minidrone.design;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: fr.obeo.dsl.minidrone.design.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.sirius,
+ org.eclipse.sirius.common.acceleo.aql,
+ org.eclipse.sirius.diagram;bundle-version="3.1.3",
+ fr.obeo.dsl.minidrone;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
