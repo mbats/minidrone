@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="fr.obeo.dsl.minidrone.application.MinidroneApplication">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="MinidroneDesigner"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="fr.obeo.dsl.minidrone.application.application"
+            name="Minidrone Designer">
+         <property
+               name="applicationCSS"
+               value="platform:/plugins/fr.obeo.minidrone.application.default.css">
+         </property>
+         <property
+               name="appName"
+               value="Minidrone Designer">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
